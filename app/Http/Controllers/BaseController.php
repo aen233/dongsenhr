@@ -72,19 +72,19 @@ class BaseController extends Controller
             throw new Error(110003, 'token解密错误');
         }
 
-        $this->openId     = $token['openId'];
-        $this->sessionKey = $token['sessionKey'];
+        $this->openId     = $token['openid'];
+        $this->sessionKey = $token['session_key'];
 
         Log::debug('token:' . var_export($token, true));
 
 
-        Log::info('open_id:' . $this->openId);
-        $user = User::query()->where('open_id', $this->openId)->first();
+        Log::info('openid:' . $this->openId);
+        $user = User::query()->where('openid', $this->openId)->first();
 
         // 如果用户不存在，先写入，再查询，避免清数据导致的身份失效
         if (empty($user)) {
             $user = User::query()->create([
-                    'open_id'     => $this->openId,
+                    'openid'     => $this->openId,
                     'session_key' => $this->sessionKey
                 ]);
         }
