@@ -6,13 +6,14 @@ use App\Models\UserRelation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-class ItemController extends MiniController
+class ItemController extends BaseController
 {
     protected $itemType = '';
     protected $model = '';
 
     public function __construct()
     {
+        parent::__construct();
         $this->itemType = ucfirst(Str::camel(request()->item_type));
         $this->model    = "App\Models\\" . $this->itemType;
     }

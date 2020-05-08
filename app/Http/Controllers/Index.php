@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use EasyWeChat\Factory;
 
-class Index extends MiniController
+class Index extends BaseController
 {
     /**
      * @param Request $request

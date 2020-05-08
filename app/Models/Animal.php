@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Animal extends Mini
+class Animal extends BaseModel
 {
     //
 }

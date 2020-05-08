@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class DayEvent extends Mini
+class DayEvent extends BaseModel
 {
     //
 }

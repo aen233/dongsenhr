@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Fossil extends Mini
+class Fossil extends BaseModel
 {
     //
 }

@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class UserRelation extends Mini
+class UserRelation extends BaseModel
 {
     //
     public function scopeRelationByUserId($query, $userId, $type = '', $status = 0)

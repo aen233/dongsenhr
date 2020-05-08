@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::prefix('user')->group(function () {
-    Route::post('create', 'UserController@create');
+    Route::post('create', 'LoginController@index');
     Route::post('list', 'UserController@index');
     Route::post('detail', 'UserController@detail');
     Route::post('update', 'UserController@update');

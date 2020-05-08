@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Music extends Mini
+class Music extends BaseModel
 {
     //
 }

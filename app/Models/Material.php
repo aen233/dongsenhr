@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Material extends Mini
+class Material extends BaseModel
 {
     //
 }

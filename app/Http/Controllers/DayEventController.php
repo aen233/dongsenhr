@@ -6,7 +6,7 @@ use App\Models\DayEvent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
-class DayEventController extends MiniController
+class DayEventController extends BaseController
 {
     /**
      * @param Request $request

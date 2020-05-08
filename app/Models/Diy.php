@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Diy extends Mini
+class Diy extends BaseModel
 {
     //
 }

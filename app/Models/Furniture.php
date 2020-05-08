@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Furniture extends Mini
+class Furniture extends BaseModel
 {
     //
 }

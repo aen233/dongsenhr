@@ -27,7 +27,7 @@ class CreateUsersTable extends Migration
             $table->string('island_password', 10)->default('')->comment('上岛密码');
 
             $table->string('union_id', 80)->default('')->index()->comment('用户统一id');
-            $table->string('open_id', 80)->default('')->index()->comment('用户识别id');
+            $table->string('openid', 80)->default('')->index()->comment('用户识别id');
             $table->string('session_key', 80)->default('')->comment('微信登陆session_key');
 
             $table->string('avatarUrl')->default('')->comment('微信头像');
