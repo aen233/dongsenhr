@@ -68,7 +68,7 @@ class BaseController extends Controller
             $token = json_decode($token, true);
         } catch (\Exception $exception) {
             Log::error('token:' . var_export($token, true));
-            Log::error('ERROR:110003:token解密错误');
+            Log::error('ERROR token解密错误');
             throw new Error(110003, 'token解密错误');
         }
 
